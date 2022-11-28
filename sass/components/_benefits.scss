@@ -1,0 +1,69 @@
+.benefits {   
+    @media screen and (min-width: $mobile) {
+        &.benefits__mobile:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+    
+
+.benefits__psevdo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;    
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+
+    @media screen and (min-width: $tablet) {
+        width: 354px;
+    }
+    
+    @media screen and (min-width: $desktop) {
+        width: 270px;
+    }
+
+    &::before {
+        display: block;
+        content: "";
+        height: 120px;
+        background: #F5F4FA;
+        border-radius: 4px;
+
+        background-image: url(../img/antenna\ 1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #212121;
+    }
+}
+
+.benefits__title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.benefits__text {
+    line-height: 1.71;
+    width: 450;
+
+    @media screen and (min-width: $tablet) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 270px;
+    }
+}
+

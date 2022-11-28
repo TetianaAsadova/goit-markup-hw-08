@@ -1,0 +1,139 @@
+button {
+    font-family: inherit;
+}
+
+.hero-button {
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    width: 216px;
+    height: 50px;
+
+    color: var(--whete-letters);
+    background: var(--fonbut);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    letter-spacing: 0.06em;
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .container &:hover,
+    .container &:focus {
+        background: #188CE8;
+        }
+}
+
+
+
+.emailing-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding-left: 28px;
+    padding-right: 13px;
+
+    width: 200px;
+    height: 50px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+
+    border: none;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.modal-btn {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    top: 8px;
+    right: 8px;
+
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 50%;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    cursor: pointer;
+
+    &:focus>.close-btn,
+    &:hover>.close-btn {
+        fill: var(--fonbut);
+    }
+}
+
+
+.form-btn {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 200px;
+    height: 50px;
+
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+.button-type {
+    display: inline-block;
+    margin-bottom: 56px;
+    padding: 6px 22px;
+    border-radius: 4px;
+    min-width: 103px;
+    color: var(--title-text-color);
+    background: var(--fonbutton);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.button-all {
+    display: inline-block;
+    margin-bottom: 56px;
+    padding: 6px 25px;
+    width: 73px;
+    border-radius: 4px;
+    color: var(--title-text-color);
+    background: var(--fonbutton);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}

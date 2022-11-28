@@ -1,0 +1,46 @@
+.job {
+    // @extend %section;
+
+    padding-top: 0;
+}
+
+.job__work {
+    margin-bottom: 50px;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.job__foto--line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.job__work--item {
+    position: relative;
+}
+
+.picture {
+    display: block;
+}
+
+.job__plash--text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    background: rgba(47, 48, 58, 0.8);
+
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

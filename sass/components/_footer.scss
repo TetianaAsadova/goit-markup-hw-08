@@ -1,0 +1,152 @@
+.footer-cont {
+    display: block;
+    background: var(--fon);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.logofoot {
+    color: var(--whete-letters);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    text-decoration: none;
+
+    &>span {
+        color: var(--fonbut);
+    }
+}
+
+.norm {
+    font-style: normal;
+}
+
+.adress-margin {
+    margin-top: 20px;
+}
+
+.footer-margin {
+    margin-bottom: 9px;
+}
+
+.footer-adress {
+    color: #FFFFFF;
+    line-height: 1.71;
+    text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .norm &:hover,
+    .norm &:focus {
+        color: var(--fonbut);
+    }
+}
+
+.footer-text {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.71;
+    text-decoration: none;
+
+    .norm & {
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .norm &:hover,
+    .norm &:focus {
+        color: var(--fonbut);
+    }
+}
+
+.equal {
+    display: flex;
+    align-items: baseline;
+}
+
+.joining {
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 23px;
+}
+
+.footer-first {
+    margin-right: 70px;
+}
+
+.socials-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.socials-icon {
+    fill: currentColor;
+}
+
+.socials-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #2196F3;
+    }
+}
+
+.emailing {
+    margin-left: 93px;
+}
+
+.emailing-text {
+    margin-bottom: 20px;
+
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.emailing-form {
+    display: flex;
+    gap: 12px;
+}
+
+.emailing-input {
+    padding: 15px 16px;
+
+    width: 358px;
+    height: 50px;
+
+    color: #fff;
+
+    background: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    &::placeholder {
+        font-style: normal;
+        font-size: 16px;
+        line-height: 1.25;
+
+        display: flex;
+        align-items: center;
+
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
