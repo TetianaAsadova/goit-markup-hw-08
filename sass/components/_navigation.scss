@@ -1,4 +1,7 @@
 .site-nav {
+    @media screen and (max-width: ($tablet - 0.02)) {
+        display: none;
+    }
     display: flex;
     margin-left: 93px;
 

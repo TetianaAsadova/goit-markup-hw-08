@@ -1,17 +1,22 @@
 .benefits {   
-    @media screen and (min-width: $mobile) {
-        &.benefits__mobile:not(:last-child) {
+    @media screen and (max-width: ($tablet - 0.02)) {
+        li:not(:last-child) {
             margin-bottom: 30px;
         }
     }
-    @media screen and (min-width: $desktop) {
+
+    @media screen and (min-width: $tablet) {
         display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
         justify-content: space-between;
     }
 }
 
 
-    
 
 .benefits__psevdo {
     display: flex;
@@ -57,7 +62,7 @@
 .benefits__text {
     line-height: 1.71;
     width: 450;
-
+   
     @media screen and (min-width: $tablet) {
         width: 354px;
     }

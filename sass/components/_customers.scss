@@ -1,29 +1,49 @@
 .loyal-customers {
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 28px;    
+    line-height: 1.17;
     text-align: center;
     color: var(--title-text-color);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 36px;
+        margin-bottom: 50px;
+        }
 }
 
 .customers-line {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
+    @media screen and (max-width: ($desktop - 0.02)) {
+        flex-wrap: wrap;   
+        gap: 30px;            
+    }
+    
+    @media screen and (min-width: $desktop) {        
+        justify-content: space-between;
+        align-items: center;    
+    }
+    
 }
  
 .customer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    width: 210px;    
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: #AFB1B8;
+
+    @media screen and (min-width: $tablet) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 170px;
+    }
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 color 250ms cubic-bezier(0.4, 0, 0.2, 1);
