@@ -28,9 +28,17 @@
 }
 
 .portfolio-line {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--indent);
+    display: block;
+    li:not(:last-child) {
+            margin-bottom: var(--indent);
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--indent);
+    }
+    
 }
 
 .element-width {

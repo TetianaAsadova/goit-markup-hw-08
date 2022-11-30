@@ -379,8 +379,8 @@ button {
 
 .hero {
   display: block;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background: #C4C4C4;
   text-align: center;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/fonimg.jpg);
@@ -389,15 +389,27 @@ button {
   background-size: cover;
   background-position: center;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .hero-title {
   margin-bottom: 30px;
   color: var(--whete-letters);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.6153846154;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -488,6 +500,11 @@ button {
 .job {
   padding-top: 0;
 }
+@media screen and (max-width: 1199.98px) {
+  .job {
+    display: none;
+  }
+}
 
 .job__work {
   margin-bottom: 50px;
@@ -544,21 +561,45 @@ button {
 }
 
 .team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
 
 .team__line {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: block;
+}
+.team__line li:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .team__persone {
@@ -1118,12 +1159,20 @@ button {
 }
 
 .portfolio-line {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: var(--indent);
+  display: block;
+}
+.portfolio-line li:not(:last-child) {
+  margin-bottom: var(--indent);
+}
+@media screen and (min-width: 768px) {
+  .portfolio-line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: var(--indent);
+  }
 }
 
 .element-width {
@@ -1239,9 +1288,9 @@ button {
     display: none;
   }
 }
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+.menu-toggle:hover > svg,
+.menu-toggle:focus > svg {
+  fill: var(--fonbut);
 }
 
 .menu-container {
@@ -1251,10 +1300,14 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #3f51b5;
+  background-color: #FFFFFF;
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -1262,6 +1315,9 @@ button {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+.menu-container:focus > .menu-toggle, .menu-container:hover > .menu-toggle {
+  fill: var(--fonbut);
 }
 
 .menu-container.is-open {
@@ -1273,18 +1329,65 @@ button {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: #212121;
 }
 
 .mobile-menu {
   padding: 0;
-  margin: 0;
-  list-style: none;
+  margin-top: 48px;
+  margin-left: 40px;
+  margin-bottom: auto;
+}
+.mobile-menu .link:hover, .mobile-menu .link:focus {
+  color: #2196F3;
 }
 
 .mobile-menu .link {
   display: block;
   padding: 10px;
-  color: #fff;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  color: #212121;
+  text-decoration: none;
+}
+
+.mobile-tel,
+.mobile-socials {
+  margin-left: 40px;
+}
+
+.mobile-tel .tel {
+  display: block;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  color: #2196F3;
+  text-decoration: none;
+}
+
+.mobile-tel .post {
+  display: block;
+  margin-bottom: 64px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  color: #757575;
+  text-decoration: none;
+}
+
+.mobile-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mobile-socials .socials {
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  color: #2196F3;
   text-decoration: none;
 }/*# sourceMappingURL=main.css.map */

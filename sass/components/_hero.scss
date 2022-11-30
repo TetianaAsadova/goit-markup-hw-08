@@ -1,9 +1,8 @@
 .hero {
     display: block;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;    
     background: #C4C4C4;
-
     text-align: center;
 
     background-image:
@@ -14,14 +13,30 @@
     background-size: cover;
     background-position: center;
 
+    @media screen and (min-width: $desktop) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
 }
 
 .hero-title {
     margin-bottom: 30px;
     color: var(--whete-letters);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: calc(42 / 26);    
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
+
 }
+
+
+
+
+

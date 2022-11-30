@@ -1,6 +1,8 @@
 .job {
     // @extend %section;
-
+    @media screen and (max-width: ($desktop - 0.02)) {
+            display: none;
+        }
     padding-top: 0;
 }
 
@@ -44,3 +46,4 @@
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
