@@ -25,7 +25,7 @@ button {
         }
 }
 
-
+// FOOTER BUTTON
 
 .emailing-button {
     cursor: pointer;
@@ -106,12 +106,21 @@ button {
     cursor: pointer;
 }
 
+// PORTFOLIO BUTTONS
+
 .button-type {
-    display: inline-block;
-    margin-bottom: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    // flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+    @media screen and (max-width: ($tablet - 0.02)) {
+        display: inline-block;
+        margin-bottom: 56px;
+    }
+    
+    
     padding: 6px 22px;
     border-radius: 4px;
-    min-width: 103px;
+    min-width: 67px;
     color: var(--title-text-color);
     background: var(--fonbutton);
     font-weight: 500;
@@ -120,20 +129,22 @@ button {
     text-align: center;
     border: none;
     cursor: pointer;
+
+     
 }
 
-.button-all {
-    display: inline-block;
-    margin-bottom: 56px;
-    padding: 6px 25px;
-    width: 73px;
-    border-radius: 4px;
-    color: var(--title-text-color);
-    background: var(--fonbutton);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-}
+// .button-all {
+//     display: inline-block;
+//     margin-bottom: 56px;
+//     padding: 6px 25px;
+//     width: 73px;
+//     border-radius: 4px;
+//     color: var(--title-text-color);
+//     background: var(--fonbutton);
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.62;
+//     text-align: center;
+//     border: none;
+//     cursor: pointer;
+// }

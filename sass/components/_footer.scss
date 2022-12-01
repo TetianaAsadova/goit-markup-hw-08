@@ -6,11 +6,20 @@
 }
 
 .logofoot {
+    @media screen and (max-width: ($tablet - 0.02)) {
+        margin-left: auto;
+        margin-right: auto;
+    }
     color: var(--whete-letters);
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+
+    @media screen and (min-width: $desktop) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 
     text-decoration: none;
 
@@ -24,11 +33,11 @@
 }
 
 .adress-margin {
-    margin-top: 20px;
+    margin-top: 28px;
 }
 
 .footer-margin {
-    margin-bottom: 9px;
+    margin-bottom: 12px;
 }
 
 .footer-adress {
@@ -46,7 +55,7 @@
 
 .footer-text {
     color: rgba(255, 255, 255, 0.6);
-    line-height: 1.71;
+    line-height: 1.14;
     text-decoration: none;
 
     .norm & {
@@ -59,18 +68,30 @@
     }
 }
 
-.equal {
-    display: flex;
-    align-items: baseline;
+.equal {    
+    // @media screen and (max-width: ($tablet - 0.02)) {
+    //     // align-items: center;
+    //     // justify-content: center;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    // }
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: baseline;
+    }
 }
-
+    
 .joining {
+    @media screen and (max-width: ($tablet - 0.02)) {
+        margin-top: 60px;
+    }
+    
     font-style: normal;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-bottom: 23px;
+    margin-bottom: 20px;
 }
 
 .footer-first {
@@ -81,10 +102,6 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-}
-
-.socials-icon {
-    fill: currentColor;
 }
 
 .socials-footer {
@@ -105,8 +122,16 @@
     }
 }
 
+.socials-icon {
+    fill: currentColor;
+}
+
 .emailing {
     margin-left: 93px;
+
+    @media screen and (max-width: ($tablet - 0.02)) {
+        margin-top: 60px;
+    }
 }
 
 .emailing-text {
@@ -121,14 +146,22 @@
 }
 
 .emailing-form {
-    display: flex;
-    gap: 12px;
-}
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        gap: 12px;
+    }
+    }
+    
 
 .emailing-input {
     padding: 15px 16px;
 
-    width: 358px;
+    width: 450px;
+
+    @media screen and (min-width: $desktop) {
+        width: 358px;
+    }
+    
     height: 50px;
 
     color: #fff;
@@ -147,6 +180,10 @@
         align-items: center;
 
         color: rgba(255, 255, 255, 0.6);
+    }
+
+    @media screen and (max-width: ($desktop - 0.02)) {
+        margin-bottom: 20px;
     }
 }
 

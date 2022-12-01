@@ -29,10 +29,15 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
 
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
 
-    padding: 40px 39px 40px 41px;
+    @media screen and (min-width: $desktop) {
+        width: 528px;
+        height: 581px;
+    }
+    
+    padding: 40px;
 
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -51,10 +56,14 @@
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;    
     text-align: center;
 
     color: #212121;
+
+    @media screen and (min-width: $desktop) {
+        line-height: 1.15;
+    }
 }
 
 .form-group {
@@ -86,7 +95,12 @@
 
 .form-input {
     display: block;
-    width: 448px;
+    width: 370px;
+
+    @media screen and (min-width: $desktop) {
+        width: 448px;
+    }
+    
     height: 40px;
     padding-left: 42px;
 
@@ -104,7 +118,11 @@
 
 .form-message {
     padding: 12px 16px;
-    width: 448px;
+    width: 370px;
+    @media screen and (min-width: $desktop) {
+        width: 448px;
+    }
+    
     height: 120px;
     resize: none;
 
@@ -115,8 +133,14 @@
 
     &::placeholder {
         font-style: normal;
-        font-size: 12px;
-        line-height: 1.17;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+
+        @media screen and (min-width: $desktop) {
+            font-size: 12px;
+            line-height: calc(14 / 12);
+        }
+        
         letter-spacing: 0.01em;
 
         color: rgba(117, 117, 117, 0.5);
@@ -130,7 +154,10 @@
 }
 
 .form-checkbox-icon {
-    margin-left: 14px;
+    @media screen and (min-width: $desktop) {
+        margin-left: 14px;
+    }
+    
 
     & .unchecked {
         opacity: 1;
@@ -157,13 +184,14 @@
 
 .form-agreement-text {
     user-select: none;
-
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
-
     color: #757575;
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+    }   
 }
 
 .form-agreement-link {
