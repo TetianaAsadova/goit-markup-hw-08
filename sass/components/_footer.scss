@@ -5,11 +5,44 @@
     padding-bottom: 60px;
 }
 
+.equal {
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.footer-portfolio {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+       
+    }
+}
+
+.footer-first {
+    display: block;
+
+    @media screen and (min-width: $tablet) {
+        margin-right: 165px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 70px;
+    }
+
+}
+
 .logofoot {
     @media screen and (max-width: ($tablet - 0.02)) {
+        display: block;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
     }
+    @media screen and (min-width: $tablet) and (max-width: ($desktop - 0.02)) {
+        margin-left: 115px;
+    }
+
     color: var(--whete-letters);
     font-family: 'Raleway';
     font-weight: 700;
@@ -34,9 +67,21 @@
 
 .adress-margin {
     margin-top: 28px;
+    @media screen and (max-width: ($tablet - 0.02)) {
+        text-align: center;
+    }
+    @media screen and (min-width: $tablet) and (max-width: ($desktop - 0.02)) {
+        margin-left: 61px;
+    }
 }
 
 .footer-margin {
+    @media screen and (max-width: ($tablet - 0.02)) {
+        display: block;
+        .footer-text {
+            text-align: center;
+        }
+    }
     margin-bottom: 12px;
 }
 
@@ -52,8 +97,16 @@
         color: var(--fonbut);
     }
 }
-
+@media screen and (min-width: $tablet) and (max-width: ($desktop - 0.02)) {
+    li .footer-margin {
+        text-align: center;
+    }
+}
 .footer-text {
+    // @media screen and (max-width: ($tablet - 0.02)) {
+    //     text-align: center;
+    // }
+
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.14;
     text-decoration: none;
@@ -68,22 +121,10 @@
     }
 }
 
-.equal {    
-    // @media screen and (max-width: ($tablet - 0.02)) {
-    //     // align-items: center;
-    //     // justify-content: center;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    // }
-    @media screen and (min-width: $desktop) {
-        display: flex;
-        align-items: baseline;
-    }
-}
-    
 .joining {
     @media screen and (max-width: ($tablet - 0.02)) {
         margin-top: 60px;
+        text-align: center;
     }
     
     font-style: normal;
@@ -94,14 +135,27 @@
     margin-bottom: 20px;
 }
 
-.footer-first {
-    margin-right: 70px;
+.joining {
+    @media screen and (max-width: ($tablet - 0.02)) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    @media screen and (min-width: $tablet) and (max-width: ($desktop - 0.02)) {
+        text-align: center;
+        margin-right: 89px;
+    }
 }
+
+
 
 .socials-bottom {
     display: flex;
     justify-content: center;
     gap: 10px;
+    @media screen and (min-width: $tablet) and (max-width: ($desktop - 0.02)) {
+            margin-right: 89px;
+        }
 }
 
 .socials-footer {
@@ -126,11 +180,15 @@
     fill: currentColor;
 }
 
-.emailing {
-    margin-left: 93px;
-
-    @media screen and (max-width: ($tablet - 0.02)) {
+.emailing {    
+    @media screen and (max-width: ($desktop - 0.02)) {
         margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-left: 70px;
     }
 }
 
@@ -146,6 +204,12 @@
 }
 
 .emailing-form {
+    @media screen and (max-width: ($desktop - 0.02)) {
+        .emailing-button {
+            margin-left: auto;
+            margin-right: auto;
+        }    
+    }
     @media screen and (min-width: $desktop) {
         display: flex;
         gap: 12px;

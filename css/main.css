@@ -743,6 +743,39 @@ button {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .equal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.footer-first {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .footer-first {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-first {
+    margin-right: 70px;
+  }
+}
+
 .logofoot {
   color: var(--whete-letters);
   font-family: "Raleway";
@@ -753,8 +786,15 @@ button {
 }
 @media screen and (max-width: 767.98px) {
   .logofoot {
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .logofoot {
+    margin-left: 115px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -774,9 +814,27 @@ button {
 .adress-margin {
   margin-top: 28px;
 }
+@media screen and (max-width: 767.98px) {
+  .adress-margin {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .adress-margin {
+    margin-left: 61px;
+  }
+}
 
 .footer-margin {
   margin-bottom: 12px;
+}
+@media screen and (max-width: 767.98px) {
+  .footer-margin {
+    display: block;
+  }
+  .footer-margin .footer-text {
+    text-align: center;
+  }
 }
 
 .footer-adress {
@@ -790,6 +848,11 @@ button {
   color: var(--fonbut);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  li .footer-margin {
+    text-align: center;
+  }
+}
 .footer-text {
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.14;
@@ -803,17 +866,6 @@ button {
   color: var(--fonbut);
 }
 
-@media screen and (min-width: 1200px) {
-  .equal {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-  }
-}
-
 .joining {
   font-style: normal;
   font-weight: 700;
@@ -825,11 +877,21 @@ button {
 @media screen and (max-width: 767.98px) {
   .joining {
     margin-top: 60px;
+    text-align: center;
   }
 }
 
-.footer-first {
-  margin-right: 70px;
+@media screen and (max-width: 767.98px) {
+  .joining {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .joining {
+    text-align: center;
+    margin-right: 89px;
+  }
 }
 
 .socials-bottom {
@@ -840,6 +902,11 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .socials-bottom {
+    margin-right: 89px;
+  }
 }
 
 .socials-footer {
@@ -868,12 +935,17 @@ button {
   fill: currentColor;
 }
 
-.emailing {
-  margin-left: 93px;
-}
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .emailing {
     margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .emailing {
+    margin-left: 70px;
   }
 }
 
@@ -886,6 +958,12 @@ button {
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 1199.98px) {
+  .emailing-form .emailing-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 1200px) {
   .emailing-form {
     display: -webkit-box;
@@ -1219,12 +1297,12 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  row-gap: 15px;
 }
 .site-click .item:not(:last-child) {
   margin-right: 8px;
