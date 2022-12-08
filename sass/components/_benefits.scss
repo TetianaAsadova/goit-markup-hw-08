@@ -1,5 +1,7 @@
 .benefits {   
     @media screen and (max-width: ($tablet - 0.02)) {
+        max-width: 450px;
+        width: 100%;
         li:not(:last-child) {
             margin-bottom: 30px;
         }
@@ -16,13 +18,12 @@
     }
 }
 
-
-
 .benefits__psevdo {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 450px;    
+    max-width: 450px;
+    width: 100%;    
     height: 120px;
     background: #F5F4FA;
     border-radius: 4px;

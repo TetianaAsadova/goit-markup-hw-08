@@ -474,6 +474,10 @@ button {
 }
 
 @media screen and (max-width: 767.98px) {
+  .benefits {
+    max-width: 450px;
+    width: 100%;
+  }
   .benefits li:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -506,7 +510,8 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   height: 120px;
   background: #F5F4FA;
   border-radius: 4px;
@@ -1052,7 +1057,6 @@ button {
 
 .emailing-input {
   padding: 15px 16px;
-  width: 450px;
   height: 50px;
   color: #fff;
   background: #2F303A;
@@ -1060,6 +1064,13 @@ button {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+@media screen and (max-width: 1199.98px) {
+  .emailing-input {
+    max-width: 450px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .emailing-input {
@@ -1115,11 +1126,6 @@ button {
       -ms-flex-align: center;
           align-items: center;
   color: rgba(255, 255, 255, 0.6);
-}
-@media screen and (max-width: 1199.98px) {
-  .emailing-input {
-    margin-bottom: 20px;
-  }
 }
 
 .backdrop {
