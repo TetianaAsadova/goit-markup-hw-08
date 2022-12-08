@@ -64,13 +64,13 @@
     margin-left: 40px;
     margin-bottom: auto;
 
-    & .link:hover,
-    & .link:focus {
+    & .option:hover,
+    & .option:focus {
         color: #2196F3;
     }
 }
 
-.mobile-menu .link {
+.mobile-menu .option {
     display: block;
     padding: 10px;
 

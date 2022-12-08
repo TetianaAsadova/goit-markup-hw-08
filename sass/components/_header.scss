@@ -22,14 +22,25 @@
     display: flex;
     margin-left: auto;
 
-    & .item+.item {
-        margin-left: 50px;
+    @media screen and (min-width: $tablet) and (max-width: ($desktop - 0.02)) {
+        display: block;
+        & .item+.item {
+            margin-top: 10px;
+        }        
     }
 
-    & .refer {
-        padding-top: 32px;
-        padding-bottom: 32px;
+    @media screen and (min-width: $desktop) {
+        & .item+.item {
+            margin-left: 50px;
+        }
+    }
+    
 
+    & .refer {
+        @media screen and (min-width: $desktop) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+    }
         color: var(--main-text-color);
         font-weight: 500;
         line-height: 1.14;
@@ -46,9 +57,12 @@
 }
 
 .item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
     color: var(--main-text-color);
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -65,7 +79,10 @@
 }
 
 .refer {
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+    }
+    
 }
 

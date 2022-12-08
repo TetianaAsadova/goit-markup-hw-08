@@ -4,10 +4,22 @@
     list-style: none;
 }
 
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+
 h1,
 h2,
 h3,
 p {
     margin: 0;
     padding: 0;
+}
+
+// RESPONSIVE IMAGES
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }

@@ -124,37 +124,67 @@
           <ul class="job__foto--line list">
             <li class="job__type--work">
               <div class="job__work--item">
-                <img
-                  class="picture"
-                  src="./img/foto1.jpg"
-                  alt="фото роботи на комп'ютері"
-                  width="370"
-                  height="294"
-                />                
+                <picture>
+                  <source media="(min-width: 1200px)" 
+                    srcset="./img/works/img_lg@1x.webp 1x, ./img/works/img_lg@2x.webp 2x"
+                    type="image/webp"
+                  >
+                  <source media="(min-width: 1200px)" 
+                    srcset="./img/works/img_lg@1x.jpg 1x, ./img/works/img_lg@2x.jpg 2x"
+                    type="image/jpg">
+                  <img class="picture" 
+                    src="./img/works/img_lg@1x.jpg"
+                    alt="фото роботи на комп'ютері" 
+                    width="370" 
+                    height="294" 
+                    loading="lazy" 
+                  />
+                </picture>
+                         
                 <p class="job__plash--text">Десктопні додатки</p>
               </div>
             </li>
             <li class="job__type--work">
               <div class="job__work--item">
-                <img
-                  class="picture"
-                  src="./img/foto2.jpg"
-                  alt="фото роботи на комп'ютері"
-                  width="370"
-                  height="294"
-                />                
+                <picture>
+                  <source media="(min-width: 1200px)" 
+                    srcset="./img/works/img_lg@1x-1.webp 1x, ./img/works/img_lg@2x-1.webp 2x"
+                    type="image/webp"
+                  >
+                  <source media="(min-width: 1200px)" 
+                    srcset="./img/works/img_lg@1x-1.jpg 1x, ./img/works/img_lg@2x-1.jpg 2x"
+                    type="image/jpg">
+                  <img 
+                    class="picture" 
+                    src="./img/works/img_lg@1x-1.jpg" 
+                    alt="фото роботи на комп'ютері" 
+                    width="370" 
+                    height="294"
+                    loading="lazy" 
+                  />
+                </picture>                
                 <p class="job__plash--text">Мобільні додатки</p>               
               </div>
             </li>
             <li class="job__type--work">
               <div class="job__work--item">
-                <img
-                  class="picture"
-                  src="./img/foto3.jpg"
-                  alt="фото роботи на комп'ютері"
-                  width="370"
-                  height="294"
-                />                
+                <picture>
+                  <source media="(min-width: 1200px)" 
+                    srcset="./img/works/img_lg@1x-2.webp 1x, ./img/works/img_lg@2x-2.webp 2x"
+                    type="image/webp"
+                  >
+                  <source media="(min-width: 1200px)" 
+                    srcset="./img/works/img_lg@1x-2.jpg 1x, ./img/works/img_lg@2x-2.jpg 2x"
+                    type="image/jpg">
+                  <img 
+                    class="picture" 
+                    src="./img/works/img_lg@1x-2.jpg" 
+                    alt="фото роботи на комп'ютері" 
+                    width="370" 
+                    height="294"
+                    loading="lazy" 
+                  />
+                </picture>             
                 <p class="job__plash--text">Дизайнерські рішення</p>                
               </div>
             </li>
@@ -167,13 +197,41 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__line list">
             <li class="team__persone">
-              <img
-                class="picture"
-                src="./img/p-designer.jpg"
-                alt="Product Designer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" 
+                  srcset="./img/team/img_lg@1x.webp 1x, ./img/team/img_lg@2x.webp 2x"
+                  type="image/webp"
+                >
+                <source 
+                  media="(min-width: 1200px)" 
+                  srcset="./img/team/img_lg@1x.jpg 1x, ./img/team/img_lg@2x.jpg 2x"
+                  type="image/jpg"
+                >
+                <source media="(min-width: 768px)" 
+                  srcset="./img/team/img_md@1x.webp 1x, ./img/team/img_md@2x.webp 2x"
+                  type="image/webp"
+                >
+                <source 
+                  media="(min-width: 768px)" 
+                  srcset="./img/team/img_md@1x.jpg 1x, ./img/team/img_md@2x.jpg 2x"
+                  type="image/jpg"
+                >
+                <source media="(max-width: 767px)" 
+                  srcset="./img/team/img_sm@1x.webp 1x, ./img/team/img_sm@2x.webp 2x"
+                  type="image/webp"
+                >
+                <source 
+                  media="(max-width: 767px)" 
+                  srcset="./img/team/img_sm@1x.jpg 1x, ./img/team/img_sm@2x.jpg 2x"
+                  type="image/jpg"
+                >
+                <img class="picture" 
+                  src="./img/team/img_sm@1x.jpg" 
+                  alt="Product Designer" 
+                  loading="lazy" 
+                />
+              </picture>
+              
               <div class="team__box">
                 <h3 class="team__second--title">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -234,13 +292,40 @@
               </div>
             </li>
             <li class="team__persone">
-              <img
-                class="picture"
-                src="./img/developer.jpg"
-                alt="Frontend Developer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" 
+                  srcset="./img/team/img_lg@1x-1.webp 1x, ./img/team/img_lg@2x-1.webp 2x"
+                  type="image/webp"
+                >
+                <source 
+                  media="(min-width: 1200px)" 
+                  srcset="./img/team/img_lg@1x-1.jpg 1x, ./img/team/img_lg@2x-1.jpg 2x"
+                  type="image/jpg"
+                >
+                <source media="(min-width: 768px)" 
+                  srcset="./img/team/img_md@1x-1.webp 1x, ./img/team/img_md@2x-1.webp 2x"
+                  type="image/webp"
+                >
+                <source 
+                  media="(min-width: 768px)" 
+                  srcset="./img/team/img_md@1x-1.jpg 1x, ./img/team/img_md@2x-1.jpg 2x"
+                  type="image/jpg"
+                >
+                <source media="(max-width: 767px)" 
+                  srcset="./img/team/img_sm@1x-1.webp 1x, ./img/team/img_sm@2x-1.webp 2x"
+                  type="image/webp">
+                <source
+                  media="(max-width: 767px)" 
+                  srcset="./img/team/img_sm@1x-1.jpg 1x, ./img/team/img_sm@2x-1.jpg 2x"
+                  type="image/jpg"
+                >
+                <img class="picture" 
+                  src="./img/team/img_sm@1x-1.jpg" 
+                  alt="Frontend Developer" 
+                  loading="lazy" 
+                />
+              </picture>
+              
               <div class="team__box">
                 <h3 class="team__second--title">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -301,13 +386,40 @@
               </div>
             </li>
             <li class="team__persone">
-              <img
-                class="picture"
-                src="./img/marketing.jpg"
-                alt="Marketing"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" 
+                  srcset="./img/team/img_lg@1x-2.webp 1x, ./img/team/img_lg@2x-2.webp 2x"
+                  type="image/webp"
+                >
+                <source 
+                  media="(min-width: 1200px)" 
+                  srcset="./img/team/img_lg@1x-2.jpg 1x, ./img/team/img_lg@2x-2.jpg 2x"
+                  type="image/jpg"
+                > 
+                <source media="(min-width: 768px)" 
+                srcset="./img/team/img_md@1x-2.webp 1x, ./img/team/img_md@2x-2.webp 2x"
+                  type="image/webp"
+                >
+                <source 
+                  media="(min-width: 768px)" 
+                  srcset="./img/team/img_md@1x-2.jpg 1x, ./img/team/img_md@2x-2.jpg 2x"
+                  type="image/jpg"
+                > 
+                <source media="(max-width: 767px)" 
+                  srcset="./img/team/img_sm@1x-2.webp 1x, ./img/team/img_sm@2x-2.webp 2x"
+                  type="image/webp">
+                <source 
+                  media="(max-width: 767px)" 
+                  srcset="./img/team/img_sm@1x-2.jpg 1x, ./img/team/img_sm@2x-2.jpg 2x"
+                  type="image/jpg"
+                >
+                <img class="picture" 
+                  src="./img/team/img_sm@1x-2.jpg" 
+                  alt="Marketing" 
+                  loading="lazy" 
+                />
+              </picture>
+              
               <div class="team__box">
                 <h3 class="team__second--title">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -368,13 +480,41 @@
               </div>
             </li>
             <li class="team__persone">
-              <img
-                class="picture"
-                src="./img/u-designer.jpg"
-                alt="UI Designer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" 
+                  srcset="./img/team/img_lg@1x-3.webp 1x, ./img/team/img_lg@2x-3.webp 2x"
+                  type="image/webp"
+                >
+                <source 
+                  media="(min-width: 1200px)" 
+                  srcset="./img/team/img_lg@1x-3.jpg 1x, ./img/team/img_lg@2x-3.jpg 2x"
+                  type="image/jpg"
+                >
+                <source media="(min-width: 768px)" 
+                  srcset="./img/team/img_md@1x-3.webp 1x, ./img/team/img_md@2x-3.webp 2x"
+                  type="image/webp"
+                >
+                <source 
+                  media="(min-width: 768px)" 
+                  srcset="./img/team/img_md@1x-3.jpg 1x, ./img/team/img_md@2x-3.jpg 2x"
+                  type="image/jpg"
+                > 
+                <source media="(max-width: 767px)" 
+                  srcset="./img/team/img_sm@1x-3.webp 1x, ./img/team/img_sm@2x-3.webp 2x"
+                  type="image/webp"
+                >
+                <source 
+                  media="(max-width: 767px)" 
+                  srcset="./img/team/img_sm@1x-3.jpg 1x, ./img/team/img_sm@2x-3.jpg 2x"
+                  type="image/jpg"
+                >
+                <img class="picture" 
+                  src="./img/team/img_sm@1x-3.jpg" 
+                  alt="UI Designer" 
+                  loading="lazy" 
+                />
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__second--title">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -497,15 +637,21 @@
             <address class="adress-margin">
               <ul class="norm list">
                 <li class="footer-margin">
-                  <a href="https://goo.gl/maps/524kkG5ZM38i1wWp9" class="footer-adress" target="_blank"
+                  <a href="https://goo.gl/maps/524kkG5ZM38i1wWp9" 
+                    class="footer-adress" 
+                    target="_blank"
                     rel="noopener noreferrer nofollov">м. Київ, пр-т Лесі Українки, 26
                   </a>
                 </li>
                 <li class="footer-margin">
-                  <a href="mailto:info@devstudio.com" class="footer-text refer">info@devstudio.com</a>
+                  <a href="mailto:info@devstudio.com" 
+                    class="footer-text refer">info@devstudio.com
+                  </a>
                 </li>
                 <li class="footer-margin">
-                  <a href="tel:+380961111111" class="footer-text refer">+38 096 111 11 11</a>
+                  <a href="tel:+380961111111" 
+                    class="footer-text refer">+38 096 111 11 11
+                  </a>
                 </li>
               </ul>
             </address>
@@ -514,7 +660,10 @@
             <p class="joining">ПРИЄДНУЙТЕСЬ</p>
             <ul class="socials-bottom list">
               <li class="socials-item">
-                <a class="socials-footer link" href="https://instagram.com" target="_blank" rel="nofollow noopener noreferrer"
+                <a class="socials-footer link" 
+                  href="https://instagram.com" 
+                  target="_blank" 
+                  rel="nofollow noopener noreferrer"
                   aria-label="Instagram">
                   <svg class="socials-icon" width="20" height="20">
                     <use href="./img/icons.svg#instagram"></use>
@@ -522,7 +671,10 @@
                 </a>
               </li>
               <li class="socials-item">
-                <a class="socials-footer link" href="https://twitter.com" target="_blank" rel="nofollow noopener noreferrer"
+                <a class="socials-footer link" 
+                  href="https://twitter.com" 
+                  target="_blank" 
+                  rel="nofollow noopener noreferrer"
                   aria-label="Twitter">
                   <svg class="socials-icon" width="20" height="20">
                     <use href="./img/icons.svg#twitter"></use>
@@ -530,7 +682,10 @@
                 </a>
               </li>
               <li class="socials-item">
-                <a class="socials-footer link" href="https://facebook.com" target="_blank" rel="nofollow noopener noreferrer"
+                <a class="socials-footer link" 
+                  href="https://facebook.com" 
+                  target="_blank" 
+                  rel="nofollow noopener noreferrer"
                   aria-label="Facebook">
                   <svg class="socials-icon" width="20" height="20">
                     <use href="./img/icons.svg#facebook"></use>
@@ -538,7 +693,10 @@
                 </a>
               </li>
               <li class="socials-item">
-                <a class="socials-footer link" href="https://linkedin.com" target="_blank" rel="nofollow noopener noreferrer"
+                <a class="socials-footer link" 
+                  href="https://linkedin.com" 
+                  target="_blank" 
+                  rel="nofollow noopener noreferrer"
                   aria-label="Linkedin">
                   <svg class="socials-icon" width="20" height="20">
                     <use href="./img/icons.svg#linkedin"></use>
@@ -625,9 +783,9 @@
       </button>
     
       <ul class="mobile-menu list">
-        <li><a href="" class="link">Студія</a></li>
-        <li><a href="" class="link">Портфоліо</a></li>
-        <li><a href="" class="link">Контакти</a></li>
+        <li><a href="" class="option">Студія</a></li>
+        <li><a href="" class="option">Портфоліо</a></li>
+        <li><a href="" class="option">Контакти</a></li>
       </ul>
       <ul class="mobile-tel list">
         <li><a href="" class="tel">+38 096 111 11 11</a></li>

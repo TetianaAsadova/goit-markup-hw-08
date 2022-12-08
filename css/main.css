@@ -48,12 +48,23 @@ body {
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
 h1,
 h2,
 h3,
 p {
   margin: 0;
   padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .section {
@@ -72,8 +83,6 @@ p {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -194,11 +203,6 @@ button {
 }
 
 .button-type {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding: 6px 22px;
   border-radius: 4px;
   min-width: 67px;
@@ -214,7 +218,21 @@ button {
 @media screen and (max-width: 767.98px) {
   .button-type {
     display: inline-block;
-    margin-bottom: 56px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-type {
+    margin-bottom: 50px;
   }
 }
 
@@ -253,12 +271,20 @@ button {
     display: none;
   }
 }
-.site-cont .item + .item {
-  margin-left: 50px;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .site-cont {
+    display: block;
+  }
+  .site-cont .item + .item {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-cont .item + .item {
+    margin-left: 50px;
+  }
 }
 .site-cont .refer {
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--main-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -267,23 +293,33 @@ button {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .site-cont .refer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 .site-cont .refer:hover, .site-cont .refer:focus {
   color: var(--fonbut);
 }
 
 .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   color: var(--main-text-color);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .item:hover, .item:focus {
   color: var(--fonbut);
@@ -294,13 +330,15 @@ button {
   margin-right: 10px;
 }
 
-.refer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 1200px) {
+  .refer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .logo {
@@ -376,16 +414,46 @@ button {
   padding-bottom: 118px;
   background: #C4C4C4;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/fonimg.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/fonimg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero/bg_sm@1x.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/bg_sm@1x.jpg);
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero/bg_sm@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/bg_sm@2x.jpg);
+  }
+}
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero/bg_md@1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/bg_md@1x.jpg);
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero/bg_md@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/bg_md@2x.jpg);
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero/bg_lg@1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/bg_lg@1x.jpg);
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero/bg_lg@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/bg_lg@2x.jpg);
   }
 }
 
@@ -568,11 +636,13 @@ button {
   }
 }
 
-.team__line {
-  display: block;
-}
-.team__line li:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767.98px) {
+  .team__line {
+    display: block;
+  }
+  .team__line li:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .team__line {
@@ -765,7 +835,7 @@ button {
 .footer-first {
   display: block;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .footer-first {
     margin-right: 165px;
   }
@@ -794,7 +864,7 @@ button {
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .logofoot {
-    margin-left: 115px;
+    margin-left: 100px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -809,6 +879,11 @@ button {
 
 .norm {
   font-style: normal;
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .norm {
+    text-align: center;
+  }
 }
 
 .adress-margin {
@@ -878,11 +953,6 @@ button {
   .joining {
     margin-top: 60px;
     text-align: center;
-  }
-}
-
-@media screen and (max-width: 767.98px) {
-  .joining {
     margin-left: auto;
     margin-right: auto;
   }
@@ -891,6 +961,13 @@ button {
   .joining {
     text-align: center;
     margin-right: 89px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .joining {
+    margin-left: 70px;
+    margin-right: 94px;
+    margin-top: 15px;
   }
 }
 
@@ -1299,13 +1376,31 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
   row-gap: 15px;
 }
 .site-click .item:not(:last-child) {
   margin-right: 8px;
+}
+@media screen and (max-width: 767.98px) {
+  .site-click {
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .site-click {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-click {
+    margin-bottom: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .site-click .link {
   color: var(--title-text-color);
@@ -1321,11 +1416,14 @@ button {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-line {
-  display: block;
-}
-.portfolio-line li:not(:last-child) {
-  margin-bottom: var(--indent);
+@media screen and (max-width: 767.98px) {
+  .portfolio-line {
+    display: block;
+  }
+  .portfolio-line li:not(:last-child) {
+    margin-top: 40px;
+    margin-bottom: var(--indent);
+  }
 }
 @media screen and (min-width: 768px) {
   .portfolio-line {
@@ -1338,7 +1436,7 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
   .element-width {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -1515,11 +1613,11 @@ button {
   margin-left: 40px;
   margin-bottom: auto;
 }
-.mobile-menu .link:hover, .mobile-menu .link:focus {
+.mobile-menu .option:hover, .mobile-menu .option:focus {
   color: #2196F3;
 }
 
-.mobile-menu .link {
+.mobile-menu .option {
   display: block;
   padding: 10px;
   font-weight: 500;

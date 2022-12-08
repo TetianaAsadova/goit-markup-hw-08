@@ -109,14 +109,23 @@ button {
 // PORTFOLIO BUTTONS
 
 .button-type {
-    display: flex;
-    flex-wrap: wrap;
+    
     // flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
     @media screen and (max-width: ($tablet - 0.02)) {
         display: inline-block;
-        margin-bottom: 56px;
+        // &:last-child {
+        //     margin-bottom: 40px;
+        // }
+        
     }
-    
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: $desktop) {    
+        margin-bottom: 50px;
+    }
     
     padding: 6px 22px;
     border-radius: 4px;
@@ -128,9 +137,7 @@ button {
     line-height: 1.62;
     text-align: center;
     border: none;
-    cursor: pointer;
-
-     
+    cursor: pointer;     
 }
 
 // .button-all {

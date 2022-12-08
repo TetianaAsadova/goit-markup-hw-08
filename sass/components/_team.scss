@@ -22,9 +22,11 @@
 }   
 
 .team__line {
-    display: block;
-    li:not(:last-child) {
-        margin-bottom: 30px;
+    @media screen and (max-width: ($tablet - 0.02)) {
+        display: block;    
+        li:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
     
     @media screen and (min-width: $tablet) {

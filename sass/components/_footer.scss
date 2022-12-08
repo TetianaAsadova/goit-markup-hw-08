@@ -22,7 +22,7 @@
 .footer-first {
     display: block;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: ($desktop - 0.02)) {
         margin-right: 165px;
     }
 
@@ -40,7 +40,8 @@
         text-align: center;
     }
     @media screen and (min-width: $tablet) and (max-width: ($desktop - 0.02)) {
-        margin-left: 115px;
+        margin-left: 100px;
+        
     }
 
     color: var(--whete-letters);
@@ -63,8 +64,10 @@
 
 .norm {
     font-style: normal;
+    @media screen and (min-width: $tablet) and (max-width: ($desktop - 0.02)) {
+        text-align: center;
+    }
 }
-
 .adress-margin {
     margin-top: 28px;
     @media screen and (max-width: ($tablet - 0.02)) {
@@ -125,6 +128,8 @@
     @media screen and (max-width: ($tablet - 0.02)) {
         margin-top: 60px;
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     font-style: normal;
@@ -133,21 +138,20 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
-}
-
-.joining {
-    @media screen and (max-width: ($tablet - 0.02)) {
-        margin-left: auto;
-        margin-right: auto;
-    }
     
     @media screen and (min-width: $tablet) and (max-width: ($desktop - 0.02)) {
         text-align: center;
         margin-right: 89px;
     }
+
+     @media screen and (min-width: $desktop) {
+        margin-left: 70px;
+        margin-right: 94px;
+        margin-top: 15px;
+     }   
+
+
 }
-
-
 
 .socials-bottom {
     display: flex;
